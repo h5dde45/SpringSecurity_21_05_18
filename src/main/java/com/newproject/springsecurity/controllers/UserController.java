@@ -60,4 +60,9 @@ public class UserController {
     public String welcome(Model model) {
         return "welcome";
     }
+
+    @RequestMapping(value = {"/admin"}, method = RequestMethod.GET)
+    public String admin(Model model) {
+        return "admin";
+    }
 }
